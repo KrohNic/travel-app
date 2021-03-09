@@ -23,11 +23,4 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
-  rules: {
-    'no-unused-vars': [
-      'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
-    ],
-    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-  },
 };

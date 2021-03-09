@@ -1,0 +1,17 @@
+.locale_menu {
+  &--item {
+    padding: 0 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    :first-child {
+      margin-right: 1em;
+    }
+  }
+
+  &--flag {
+    width: 20px;
+    height: 20px;
+  }
+}
