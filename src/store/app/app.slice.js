@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { en } from '../../locales';
 
 const initialState = {
-  locale: en,
+  locale: en.locale,
 };
 
 const appSlice = createSlice({

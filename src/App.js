@@ -1,8 +1,8 @@
 import React from 'react';
-import LocaleSelect from './components/LocaleSelect';
+import LocaleSelectContainer from './containers/LocaleSelectContainer';
 
 function App() {
-  return <LocaleSelect />;
+  return <LocaleSelectContainer />;
 }
 
 export default App;
