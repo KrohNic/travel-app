@@ -4,20 +4,10 @@ import localesLookup from '../../locales/localesLookup';
 import {
   LABEL_ID,
   LOCALE_CLASSNAME,
-  LOCALE_ITEM_CLASSNAME,
   LOCALE_SELECT_CLASSNAME,
 } from './constants';
+import LocaleOption from './LocaleOption';
 import './LocaleSelect.scss';
-
-const LocaleOption = ({ localeName }) => (
-  <option value={localeName} className={LOCALE_ITEM_CLASSNAME}>
-    {localeName}
-  </option>
-);
-
-LocaleOption.propTypes = {
-  localeName: PropTypes.string,
-};
 
 const LocaleSelect = ({ currentLocale, handleChange }) => {
   const localeMenuItemsList = useMemo(() => {
