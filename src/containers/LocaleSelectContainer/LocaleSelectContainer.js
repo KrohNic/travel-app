@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import appStore from '../store/app';
-import localesLookup from '../locales/localesLookup';
-import LocaleSelect from '../components/LocaleSelect/LocaleSelect';
+import appStore from '../../store/app';
+import localesLookup from '../../locales/localesLookup';
+import LocaleSelect from '../../components/LocaleSelect/LocaleSelect';
 import { LOCALE_STORAGE_NAME } from './constants';
 
 const LocaleSelectContainer = () => {

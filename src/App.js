@@ -1,8 +1,26 @@
 import React from 'react';
-import LocaleSelectContainer from './containers/LocaleSelectContainer';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import LocaleSelectContainer from './containers/LocaleSelectContainer/';
+import MainPage from './pages/MainPage';
 
 function App() {
-  return <LocaleSelectContainer />;
+  return (
+    <BrowserRouter>
+      <LocaleSelectContainer />
+
+      <main>
+        <Switch>
+          <Route path='/' exact>
+            <MainPage />
+          </Route>
+          <Route path='/country'>
+            <MainPage />
+          </Route>
+          <Redirect to='/' />
+        </Switch>
+      </main>
+    </BrowserRouter>
+  );
 }
 
 export default App;
