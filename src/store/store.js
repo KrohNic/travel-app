@@ -4,7 +4,7 @@ import appSlice from './app';
 const middleware = getDefaultMiddleware({
   immutableCheck: false,
   serializableCheck: false,
-  thunk: false,
+  thunk: true,
 });
 
 export const store = configureStore({

@@ -1,20 +1,39 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { en } from '../../locales';
+import * as thunkActions from './app.thunk';
+import name from './app.name';
 
 const initialState = {
   locale: en.locale,
+  countries: [],
+  isCountriesLoading: false,
+  error: '',
 };
 
 const appSlice = createSlice({
-  name: 'appSlice',
+  name,
   initialState,
   reducers: {
     setLocale: (state, action) => {
       state.locale = action.payload;
     },
   },
+  extraReducers: {
+    [thunkActions.fetchCountries.pending]: (state) => {
+      state.isCountriesLoading = true;
+      state.error = '';
+    },
+    [thunkActions.fetchCountries.fulfilled]: (state, action) => {
+      state.countries = action.payload;
+      state.isCountriesLoading = false;
+    },
+    [thunkActions.fetchCountries.rejected]: (state, action) => {
+      state.isCountriesLoading = false;
+      state.error = action.error;
+    },
+  },
 });
 
-const { actions, reducer, name } = appSlice;
+const { actions, reducer } = appSlice;
 
-export default { reducer, name, actions };
+export default { reducer, name, actions: { ...actions, ...thunkActions } };
