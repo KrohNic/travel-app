@@ -38,4 +38,4 @@ LocaleSelect.propTypes = {
   handleChange: PropTypes.func,
 };
 
-export default React.memo(LocaleSelect);
+export default LocaleSelect;

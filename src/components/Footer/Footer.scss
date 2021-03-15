@@ -1,9 +1,10 @@
 @import '../../styles/colors.scss';
 
 .footer {
+  width: 100%;
   margin-top: 15px;
   padding: 10px 0;
-  background-color: $color_header;
+  background-color: $color_header_bg;
   box-shadow: 0 0 8px 2px $color_country_shadow;
 
   &--link {

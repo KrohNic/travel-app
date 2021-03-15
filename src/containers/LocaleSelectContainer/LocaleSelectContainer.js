@@ -7,21 +7,21 @@ import { LOCALE_STORAGE_NAME } from './constants';
 
 const LocaleSelectContainer = () => {
   const dispatch = useDispatch();
-  const localeName = useSelector(appStore.selectors.getLocale);
-  const locale = localesLookup[localeName];
+  const locale = useSelector(appStore.selectors.getLocale);
   const handleChange = useCallback((event) => {
-    dispatch(appStore.actions.setLocale(event.target.value));
+    const localeName = event.target.value;
+    const selectedLocale = localesLookup[localeName];
+
+    localStorage.setItem(LOCALE_STORAGE_NAME, localeName);
+    dispatch(appStore.actions.setLocale(selectedLocale));
   }, []);
 
   useEffect(() => {
     const savedLocaleName = localStorage.getItem(LOCALE_STORAGE_NAME);
+    const savedLocale = localesLookup[savedLocaleName];
 
-    if (savedLocaleName) dispatch(appStore.actions.setLocale(savedLocaleName));
+    if (savedLocale) dispatch(appStore.actions.setLocale(savedLocale));
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem(LOCALE_STORAGE_NAME, localeName);
-  }, [localeName]);
 
   return <LocaleSelect currentLocale={locale} handleChange={handleChange} />;
 };

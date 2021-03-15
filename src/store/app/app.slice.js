@@ -4,7 +4,7 @@ import * as thunkActions from './app.thunk';
 import name from './app.name';
 
 const initialState = {
-  locale: en.locale,
+  locale: en,
   countries: [],
   isCountriesLoading: false,
   error: '',
