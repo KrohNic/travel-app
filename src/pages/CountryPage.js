@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header/Header';
 import Wrapper from '../components/Wrapper/Wrapper';
 
 const CountryPage = (props) => {
-  console.log(props);
   const countryQuery = props.match.params.id || '';
+
+  console.log(props);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <React.Fragment>

@@ -1,50 +1,61 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
   getCountries,
   getError,
   getIsCountriesLoading,
+  getLocale,
 } from '../../store/app/app.selectors';
-import appStore from '../../store/app';
-import { COUNTRIES_ITEM, COUNTRIES_LIST } from './classNames';
+import {
+  COUNTRIES_ITEM,
+  COUNTRIES_LIST,
+  COUNTRIES_BLACKOUT,
+} from './classNames';
 import './CountriesList.scss';
 
 const CountriesList = () => {
-  const dispatch = useDispatch();
   const isLoading = useSelector(getIsCountriesLoading);
   const countryList = useSelector(getCountries);
+  const locale = useSelector(getLocale);
   const error = useSelector(getError);
 
-  useEffect(async () => {
-    dispatch(appStore.actions.fetchCountries());
-  }, []);
+  if (isLoading) return <div>{locale.loading}</div>;
 
-  if (isLoading) return <div>loading...</div>;
+  if (error) {
+    return (
+      <div>
+        {locale.loadingError}: {error}
+      </div>
+    );
+  }
 
-  if (error) return <div>Loading error: {error}</div>;
+  const countriesItems = countryList.map((item) => {
+    const countryName = item['country'];
+    const capital = item['capital'];
+    const route = item['route'];
+    const imageURL = `${process.env.PUBLIC_URL}assets/images/${route}.png`;
 
-  return (
-    <div className={COUNTRIES_LIST}>
-      {countryList.map((item) => {
-        const countryName = item['country'];
-        const capital = item['capital'];
+    return (
+      <Link
+        to={`/${route}`}
+        className={COUNTRIES_ITEM}
+        key={countryName}
+        style={{
+          backgroundImage: `url(${imageURL})`,
+        }}
+      >
+        <div className={COUNTRIES_BLACKOUT}>
+          <h2>{countryName.toUpperCase()}</h2>
+          <span>
+            {locale.capital}: <b>{capital}</b>
+          </span>
+        </div>
+      </Link>
+    );
+  });
 
-        return (
-          <Link
-            to={`/${countryName}`}
-            className={COUNTRIES_ITEM}
-            key={countryName}
-          >
-            <h2>{countryName.toUpperCase()}</h2>
-            <span>
-              Capital: <b>{capital}</b>
-            </span>
-          </Link>
-        );
-      })}
-    </div>
-  );
+  return <div className={COUNTRIES_LIST}>{countriesItems}</div>;
 };
 
 export default CountriesList;

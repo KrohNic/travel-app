@@ -1,0 +1,12 @@
+[
+  {
+    "route": "russia",
+    "country": "Russia",
+    "capital": "Moscow"
+  },
+  {
+    "route": "china",
+    "country": "China",
+    "capital": "Beijing"
+  }
+]
