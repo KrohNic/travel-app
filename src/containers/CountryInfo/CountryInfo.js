@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 import { getCountries, getLocale } from '../../store/app/app.selectors';
 import Map from '../../components/Map';
 import Video from '../../components/Video';
+import WeatherContainer from '../WeatherContainer/WeatherContainer';
+import { ASIDE, COUNTRY, TITLE, IMAGE, MAP, VIDEO } from './classNames';
 import './CountryInfo.scss';
 
 const CountryInfo = ({ country }) => {
@@ -11,21 +13,28 @@ const CountryInfo = ({ country }) => {
   const countries = useSelector(getCountries);
   const data = countries.find((item) => item.route === country);
 
-  if (!data) return <div>Error</div>;
+  if (!data) return <div>{locale.error}</div>;
 
   return (
-    <React.Fragment>
-      <h2>{data.country}</h2>
+    <div className={COUNTRY}>
+      <h2 className={TITLE}>{data.country}</h2>
       <p>
         {locale.capital}: {data.capital}
       </p>
       <p>
         {data.description}
-        <img src={data.image} alt={data.country} />
+        <img className={IMAGE} src={data.image} alt={data.country} />
       </p>
-      <Map coord={data.coordinates} />
-      <Video src={data.video} />
-    </React.Fragment>
+      <div className={MAP}>
+        <Map coord={data.coordinates} />
+      </div>
+      <div className={VIDEO}>
+        <Video src={data.video} />
+      </div>
+      <aside className={ASIDE}>
+        <WeatherContainer coord={data.coordinates} locale={locale} />
+      </aside>
+    </div>
   );
 };
 

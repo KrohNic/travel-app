@@ -1,0 +1,23 @@
+.country {
+
+  &--title {
+    text-align: center;
+  }
+
+  &--img {
+    width: 80%;
+    min-width: 300px;
+    margin: 20px auto;
+    display: flex;
+  }
+
+  &--map,
+  &--video {
+    width: 50%;
+    display: inline-block;
+  }
+
+  &--aside {
+    float: right;
+}
+}
