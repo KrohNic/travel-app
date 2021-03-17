@@ -16,5 +16,59 @@
     "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew",
     "coordinates": "39.908893468019784,116.4051744937836",
     "image": "assets/images/china.png"
+  },
+  {
+    "route": "belarus",
+    "country": "Беларусь",
+    "description": "Беларусь – государство в Восточной Европе, полностью окруженное сушей.",
+    "capital": "Минск",
+    "video": "https://www.youtube-nocookie.com/embed/S0Hj-vzIrS8",
+    "coordinates": "53.90504031811592,27.540477670427023",
+    "image": "assets/images/belarus.png"
+  },
+  {
+    "route": "ukraine",
+    "country": "Украина",
+    "description": "Украина – это большая страна в Восточной Европе, известная православными церквями, черноморскими курортами и лесистыми горами.",
+    "capital": "Киев",
+    "video": "https://www.youtube-nocookie.com/embed/Rhd-N5i6H4w",
+    "coordinates": "50.49484663871965,30.56818749615546",
+    "image": "assets/images/ukraine.png"
+  },
+  {
+    "route": "poland",
+    "country": "Польша",
+    "description": "Польша – страна в Восточной Европе на берегу Балтийского моря, известная своей средневековой архитектурой и еврейскими кварталами.",
+    "capital": "Варшава",
+    "video": "https://www.youtube-nocookie.com/embed/QAsT2d7IP3c",
+    "coordinates": "52.29103466655996,20.981208746769834",
+    "image": "assets/images/poland.png"
+  },
+  {
+    "route": "usa",
+    "country": "США",
+    "description": "Соединенные Штаты Америки – государство, состоящее из 50 штатов, занимает значительную часть Северной Америки.",
+    "capital": "Вашингтон",
+    "video": "https://www.youtube-nocookie.com/embed/yRJFLKm7-Nk",
+    "coordinates": "38.99353712107323,-77.0874578635406",
+    "image": "assets/images/usa.png"
+  },
+  {
+    "route": "armenia",
+    "country": "Армения",
+    "description": "Армения – это государство на Кавказе, расположенное на границе Европы и Азии; бывшая союзная республика СССР.",
+    "capital": "Ереван",
+    "video": "https://www.youtube-nocookie.com/embed/Hicz5NM3_Zc",
+    "coordinates": "40.19181577734585,44.508799023025624",
+    "image": "assets/images/armenia.png"
+  },
+  {
+    "route": "kazakhstan",
+    "country": "Казахстан",
+    "description": "Казахстан – государство в Центральной Азии, которое раньше входило в состав СССР.",
+    "capital": "Алма-Ата",
+    "video": "https://www.youtube-nocookie.com/embed/0aRW0sUyiw0",
+    "coordinates": "43.34806803252895,76.90006068485101",
+    "image": "assets/images/kazakhstan.png"
   }
 ]
