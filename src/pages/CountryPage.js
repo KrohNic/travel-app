@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header/Header';
 import Wrapper from '../components/Wrapper/Wrapper';
-import CountryInfo from '../containers/CountryInfo/CountryInfo';
+import CountryInfoWithDataLoader from '../containers/CountryInfo/CountryInfoWithDataLoader';
 
 const CountryPage = ({ match }) => {
   const route = match.params.id || '';
@@ -15,7 +15,7 @@ const CountryPage = ({ match }) => {
     <React.Fragment>
       <Header />
       <Wrapper>
-        <CountryInfo country={route} />
+        <CountryInfoWithDataLoader country={route} />
       </Wrapper>
     </React.Fragment>
   );
