@@ -4,13 +4,15 @@
     "country": "Расія",
     "description": "Расія - найбуйнейшая краіна свету, размешчаная ва Усходняй Еўропе і Паўночнай Азіі і абмываецца водамі Ціхага і Паўночнага Ледавітага акіянаў.",
     "capital": "Масква",
-    "video": "https://www.youtube-nocookie.com/embed/tF-HTMOqS8E"
+    "video": "https://www.youtube-nocookie.com/embed/tF-HTMOqS8E",
+    "coordinates": "55.75499188679041,37.62183144525005"
   },
   {
     "route": "china",
     "country": "Кітай",
     "description": "Кітай - густанаселеная краіна ва Усходняй Азіі з разнастайнымі ландшафтамі і рэльефам.",
     "capital": "Пякін",
-    "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew"
+    "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew",
+    "coordinates": "39.908893468019784,116.4051744937836"
   }
 ]

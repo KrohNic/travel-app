@@ -4,13 +4,15 @@
     "country": "Russia",
     "description": "Russia is the largest country in the world, located in Eastern Europe and North Asia and washed by the Pacific and Arctic Oceans.",
     "capital": "Moscow",
-    "video": "https://www.youtube-nocookie.com/embed/tF-HTMOqS8E"
+    "video": "https://www.youtube-nocookie.com/embed/tF-HTMOqS8E",
+    "coordinates": "55.75499188679041,37.62183144525005"
   },
   {
     "route": "china",
     "country": "China",
     "description": "China is a densely populated country in East Asia with varied landscapes and topography.",
     "capital": "Beijing",
-    "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew"
+    "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew",
+    "coordinates": "39.908893468019784,116.4051744937836"
   }
 ]
