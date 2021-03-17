@@ -27,7 +27,7 @@ const CountriesList = () => {
   }
 
   const countriesItems = countryList.map((item) => (
-    <CountriesItem key={item['route']} data={item} locale={locale} />
+    <CountriesItem key={item.route} data={item} locale={locale} />
   ));
 
   return <div className={COUNTRIES_LIST}>{countriesItems}</div>;

@@ -5,10 +5,9 @@ import { COUNTRIES_ITEM, COUNTRIES_BLACKOUT } from './classNames';
 import './CountriesItem.scss';
 
 const CountriesItem = ({ data, locale }) => {
-  const countryName = data['country'];
-  const capital = data['capital'];
-  const route = data['route'];
-  const imageURL = `${process.env.PUBLIC_URL}assets/images/${route}.png`;
+  const countryName = data.country;
+  const capital = data.capital;
+  const route = data.route;
 
   return (
     <Link
@@ -16,7 +15,7 @@ const CountriesItem = ({ data, locale }) => {
       className={COUNTRIES_ITEM}
       key={countryName}
       style={{
-        backgroundImage: `url(${imageURL})`,
+        backgroundImage: `url(${data.image})`,
       }}
     >
       <div className={COUNTRIES_BLACKOUT}>

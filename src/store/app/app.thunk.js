@@ -1,4 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import convertData from '../../common/convertData';
 import name from './app.name';
 
 export const fetchCountries = createAsyncThunk(
@@ -9,6 +10,6 @@ export const fetchCountries = createAsyncThunk(
     const response = await fetch(dataUrl);
     const data = await response.json();
 
-    return data;
+    return convertData(data);
   }
 );

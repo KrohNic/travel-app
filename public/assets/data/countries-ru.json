@@ -5,7 +5,8 @@
     "description": "Россия – крупнейшая страна мира, расположенная в Восточной Европе и Северной Азии и омываемая водами Тихого и Северного Ледовитого океанов.",
     "capital": "Москва",
     "video": "https://www.youtube-nocookie.com/embed/tF-HTMOqS8E",
-    "coordinates": "55.75499188679041,37.62183144525005"
+    "coordinates": "55.75499188679041,37.62183144525005",
+    "image": "assets/images/russia.png"
   },
   {
     "route": "china",
@@ -13,6 +14,7 @@
     "description": "Китай – густонаселенная страна в Восточной Азии с разнообразными ландшафтами и рельефом.",
     "capital": "Пекин",
     "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew",
-    "coordinates": "39.908893468019784,116.4051744937836"
+    "coordinates": "39.908893468019784,116.4051744937836",
+    "image": "assets/images/china.png"
   }
 ]
