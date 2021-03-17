@@ -5,7 +5,7 @@ import { getCountries, getLocale } from '../../store/app/app.selectors';
 import Map from '../../components/Map';
 import Video from '../../components/Video';
 import WeatherContainer from '../WeatherContainer/WeatherContainer';
-import { ASIDE, COUNTRY, TITLE, IMAGE, MAP, VIDEO } from './classNames';
+import { ASIDE, COUNTRY, TITLE, IMAGE, MAP, VIDEO, INFO } from './classNames';
 import './CountryInfo.scss';
 
 const CountryInfo = ({ country }) => {
@@ -18,22 +18,25 @@ const CountryInfo = ({ country }) => {
   return (
     <div className={COUNTRY}>
       <h2 className={TITLE}>{data.country}</h2>
-      <p>
-        {locale.capital}: {data.capital}
-      </p>
-      <p>
-        {data.description}
-        <img className={IMAGE} src={data.image} alt={data.country} />
-      </p>
+      <div className={INFO}>
+        <div>
+          <p>
+            {locale.capital}: {data.capital}
+          </p>
+          <p>{data.description}</p>
+        </div>
+        <aside className={ASIDE}>
+          <WeatherContainer coord={data.coordinates} locale={locale} />
+        </aside>
+      </div>
+
+      <img className={IMAGE} src={data.image} alt={data.country} />
       <div className={MAP}>
         <Map coord={data.coordinates} />
       </div>
       <div className={VIDEO}>
         <Video src={data.video} />
       </div>
-      <aside className={ASIDE}>
-        <WeatherContainer coord={data.coordinates} locale={locale} />
-      </aside>
     </div>
   );
 };

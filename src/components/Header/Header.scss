@@ -5,6 +5,10 @@
   position: static !important;
   background-color: $color_header_bg !important;
 
+  div {
+    box-sizing: border-box;
+  }
+
   &--wrapper {
     width: 100%;
     max-width: 1000px;
