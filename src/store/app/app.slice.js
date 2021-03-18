@@ -8,6 +8,7 @@ const initialState = {
   countries: [],
   isCountriesLoading: false,
   error: '',
+  search: '',
 };
 
 const appSlice = createSlice({
@@ -16,6 +17,9 @@ const appSlice = createSlice({
   reducers: {
     setLocale: (state, action) => {
       state.locale = action.payload;
+    },
+    setSearch: (state, action) => {
+      state.search = action.payload;
     },
   },
   extraReducers: {

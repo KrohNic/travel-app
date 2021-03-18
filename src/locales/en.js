@@ -25,4 +25,5 @@ export default {
   Clear: 'Clear',
   Clouds: 'Clouds',
   weather: 'Weather',
+  noSearchResults: 'No search results',
 };

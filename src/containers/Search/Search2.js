@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { InputAdornment, TextField } from '@material-ui/core';
+import { InputBase } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import appStore from '../../store/app';
 import './Search.scss';
@@ -16,29 +16,23 @@ const Search = () => {
   }, []);
 
   const change = (event) => {
-    console.log(event.target.value);
-
     dispatch(appStore.actions.setSearch(event.target.value));
   };
 
   return (
-    <TextField
-      className='search'
-      ref={input}
-      placeholder={locale.search}
-      value={search}
-      onChange={change}
-      type='search'
-      variant='outlined'
-      margin='none'
-      InputProps={{
-        startAdornment: (
-          <InputAdornment position='start'>
-            <SearchIcon className='search--search_btn' />
-          </InputAdornment>
-        ),
-      }}
-    />
+    <div className='search'>
+      <div className='searchIcon'>
+        <SearchIcon />
+      </div>
+      <InputBase
+        ref={input}
+        className='inputRoot inputInput'
+        placeholder={locale.search}
+        inputProps={{ 'aria-label': 'search' }}
+        value={search}
+        onChange={change}
+      />
+    </div>
   );
 };
 

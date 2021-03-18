@@ -25,4 +25,5 @@ export default {
   Clear: 'Ясна',
   Clouds: 'Воблачнасць',
   weather: 'Погода',
+  noSearchResults: 'Няма вынікаў пошуку',
 };

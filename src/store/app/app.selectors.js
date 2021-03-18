@@ -8,5 +8,7 @@ export const getCountries = (store) => getSlice(store).countries;
 
 export const getError = (store) => getSlice(store).error;
 
+export const getSearch = (store) => getSlice(store).search;
+
 export const getIsCountriesLoading = (store) =>
   getSlice(store).isCountriesLoading;

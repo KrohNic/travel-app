@@ -1,37 +1,35 @@
 @import '../../styles/colors.scss';
 
 .search {
-  position: relative;
-  border-radius: 5px;
-  background-color: $color_header_bg_item;
-  margin-left: 10px;
   width: auto;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: $color_header;
   
-  &:hover {
-    background-color: $color_header_bg_item_hover;
-  }
-}
-
-.searchIcon {
-  padding: 0 20px;
-  height: 100%;
-  position: absolute;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.inputRoot {
-  input {
-    width: 12ch;
-    padding: 10px 10px 10px 0;
-    padding-left: calc(1em + 40px);
-    transition: width 0.3s;
-    color: inherit;
-
-    &:focus {
-      width: 20ch
+  div {
+    background-color: $color_header_bg_item;
+    
+    &:hover {
+      background-color: $color_header_bg_item_hover;
     }
+
+    input {
+      width: 12ch;
+      padding: 10px 10px 10px 0;
+      transition: width 0.3s;
+
+      &:focus,
+      &[value]:not([value=""]) {
+        width: 20ch;
+      }
+    }
+
+    fieldset {
+      border-width: 0;
+    }
+  }
+
+  &--search_btn {
+    color: $color_header;
   }
 }

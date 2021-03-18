@@ -25,4 +25,5 @@ export default {
   Clear: 'Ясно',
   Clouds: 'Облачно',
   weather: 'Пагода',
+  noSearchResults: 'Нет результатов поиска',
 };
