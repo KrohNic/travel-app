@@ -1,0 +1,74 @@
+[
+  {
+    "route": "russia",
+    "country": "Расія",
+    "description": "Расія - найбуйнейшая краіна свету, размешчаная ва Усходняй Еўропе і Паўночнай Азіі і абмываецца водамі Ціхага і Паўночнага Ледавітага акіянаў.",
+    "capital": "Масква",
+    "video": "https://www.youtube-nocookie.com/embed/tF-HTMOqS8E",
+    "coordinates": "55.75499188679041,37.62183144525005",
+    "image": "assets/images/russia.png"
+  },
+  {
+    "route": "china",
+    "country": "Кітай",
+    "description": "Кітай - густанаселеная краіна ва Усходняй Азіі з разнастайнымі ландшафтамі і рэльефам.",
+    "capital": "Пякін",
+    "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew",
+    "coordinates": "39.908893468019784,116.4051744937836",
+    "image": "assets/images/china.png"
+  },
+  {
+    "route": "belarus",
+    "country": "Беларусь",
+    "description": "Беларусь - дзяржава ва Усходняй Еўропе, цалкам акружанае сушай.",
+    "capital": "Менск",
+    "video": "https://www.youtube-nocookie.com/embed/S0Hj-vzIrS8",
+    "coordinates": "53.90504031811592,27.540477670427023",
+    "image": "assets/images/belarus.png"
+  },
+  {
+    "route": "ukraine",
+    "country": "Украіна",
+    "description": "Украіна - гэта вялікая краіна ва Усходняй Еўропе, вядомая праваслаўнымі цэрквамі, чарнаморскімі курортамі і лясістым гарамі.",
+    "capital": "Кіяў",
+    "video": "https://www.youtube-nocookie.com/embed/Rhd-N5i6H4w",
+    "coordinates": "50.49484663871965,30.56818749615546",
+    "image": "assets/images/ukraine.png"
+  },
+  {
+    "route": "poland",
+    "country": "Польшча",
+    "description": "Польшча - краіна ва Усходняй Еўропе на беразе Балтыйскага мора, вядомая сваёй сярэднявечнай архітэктурай і габрэйскімі кварталамі.",
+    "capital": "Варшава",
+    "video": "https://www.youtube-nocookie.com/embed/QAsT2d7IP3c",
+    "coordinates": "52.29103466655996,20.981208746769834",
+    "image": "assets/images/poland.png"
+  },
+  {
+    "route": "usa",
+    "country": "ЗША",
+    "description": "Злучаныя Штаты Амерыкі - дзяржава, якое складаецца з 50 штатаў, займае значную частку Паўночнай Амерыкі.",
+    "capital": "Вашынгтон",
+    "video": "https://www.youtube-nocookie.com/embed/yRJFLKm7-Nk",
+    "coordinates": "38.99353712107323,-77.0874578635406",
+    "image": "assets/images/usa.png"
+  },
+  {
+    "route": "armenia",
+    "country": "Арменія",
+    "description": "Арменія - гэта дзяржава на Каўказе, размешчанае на мяжы Еўропы і Азіі; былая саюзная рэспубліка СССР.",
+    "capital": "Ерэван",
+    "video": "https://www.youtube-nocookie.com/embed/Hicz5NM3_Zc",
+    "coordinates": "40.19181577734585,44.508799023025624",
+    "image": "assets/images/armenia.png"
+  },
+  {
+    "route": "kazakhstan",
+    "country": "Казахстан",
+    "description": "Казахстан - дзяржава ў Цэнтральнай Азіі, якое раней ўваходзіла ў склад СССР.",
+    "capital": "Алма-Ата",
+    "video": "https://www.youtube-nocookie.com/embed/0aRW0sUyiw0",
+    "coordinates": "43.34806803252895,76.90006068485101",
+    "image": "assets/images/kazakhstan.png"
+  }
+]

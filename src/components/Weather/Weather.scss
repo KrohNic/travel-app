@@ -1,0 +1,19 @@
+@import '../../styles/colors.scss';
+
+.weather {
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color_country_shadow;
+
+  &--title {
+    text-align: center;
+  }
+
+  &--ico {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}

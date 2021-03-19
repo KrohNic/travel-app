@@ -1,0 +1,74 @@
+[
+  {
+    "route": "russia",
+    "country": "Russia",
+    "description": "Russia is the largest country in the world, located in Eastern Europe and North Asia and washed by the Pacific and Arctic Oceans.",
+    "capital": "Moscow",
+    "video": "https://www.youtube-nocookie.com/embed/tF-HTMOqS8E",
+    "coordinates": "55.75499188679041,37.62183144525005",
+    "image": "assets/images/russia.png"
+  },
+  {
+    "route": "china",
+    "country": "China",
+    "description": "China is a densely populated country in East Asia with varied landscapes and topography.",
+    "capital": "Beijing",
+    "video": "https://www.youtube-nocookie.com/embed/niO13sM0-Ew",
+    "coordinates": "39.908893468019784,116.4051744937836",
+    "image": "assets/images/china.png"
+  },
+  {
+    "route": "belarus",
+    "country": "Belarus",
+    "description": "Belarus is a state in Eastern Europe completely surrounded by land.",
+    "capital": "Minsk",
+    "video": "https://www.youtube-nocookie.com/embed/S0Hj-vzIrS8",
+    "coordinates": "53.90504031811592,27.540477670427023",
+    "image": "assets/images/belarus.png"
+  },
+  {
+    "route": "ukraine",
+    "country": "Ukraine",
+    "description": "Ukraine is a large country in Eastern Europe, famous for its Orthodox churches, Black Sea resorts and forested mountains.",
+    "capital": "Kiew",
+    "video": "https://www.youtube-nocookie.com/embed/Rhd-N5i6H4w",
+    "coordinates": "50.49484663871965,30.56818749615546",
+    "image": "assets/images/ukraine.png"
+  },
+  {
+    "route": "poland",
+    "country": "Poland",
+    "description": "Poland is a country in Eastern Europe on the shores of the Baltic Sea, known for its medieval architecture and Jewish quarters.",
+    "capital": "Warsaw",
+    "video": "https://www.youtube-nocookie.com/embed/QAsT2d7IP3c",
+    "coordinates": "52.29103466655996,20.981208746769834",
+    "image": "assets/images/poland.png"
+  },
+  {
+    "route": "usa",
+    "country": "USA",
+    "description": "The United States of America is a state of 50 states that occupies a significant part of North America.",
+    "capital": "Washington",
+    "video": "https://www.youtube-nocookie.com/embed/yRJFLKm7-Nk",
+    "coordinates": "38.99353712107323,-77.0874578635406",
+    "image": "assets/images/usa.png"
+  },
+  {
+    "route": "armenia",
+    "country": "Armenia",
+    "description": "Armenia is a unitary, multi-party, democratic nation-state with an ancient cultural heritage.",
+    "capital": "Yerevan",
+    "video": "https://www.youtube-nocookie.com/embed/Hicz5NM3_Zc",
+    "coordinates": "40.19181577734585,44.508799023025624",
+    "image": "assets/images/armenia.png"
+  },
+  {
+    "route": "kazakhstan",
+    "country": "Kazakhstan",
+    "description": "Kazakhstan is a state in Central Asia, which was formerly part of the USSR.",
+    "capital": "Almaty",
+    "video": "https://www.youtube-nocookie.com/embed/0aRW0sUyiw0",
+    "coordinates": "43.34806803252895,76.90006068485101",
+    "image": "assets/images/kazakhstan.png"
+  }
+]

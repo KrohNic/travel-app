@@ -1,0 +1,23 @@
+@import '../../styles/colors.scss';
+
+.header {
+  margin-bottom: 15px;
+  position: static !important;
+  background-color: $color_header_bg !important;
+
+  div {
+    box-sizing: border-box;
+  }
+
+  &--wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .title {
+    flex-grow: 1;
+  }
+}
+
+

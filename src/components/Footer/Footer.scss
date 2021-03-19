@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+
+.footer {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 0;
+  background-color: $color_header_bg;
+  box-shadow: 0 0 8px 2px $color_country_shadow;
+
+  &--link {
+    text-decoration: none;
+    color: $color_main_text;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rss_logo {
+    height: 25px;
+  } 
+}

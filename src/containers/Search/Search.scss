@@ -1,0 +1,35 @@
+@import '../../styles/colors.scss';
+
+.search {
+  width: auto;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: $color_header;
+  
+  div {
+    background-color: $color_header_bg_item;
+    
+    &:hover {
+      background-color: $color_header_bg_item_hover;
+    }
+
+    input {
+      width: 12ch;
+      padding: 10px 10px 10px 0;
+      transition: width 0.3s;
+
+      &:focus,
+      &[value]:not([value=""]) {
+        width: 20ch;
+      }
+    }
+
+    fieldset {
+      border-width: 0;
+    }
+  }
+
+  &--search_btn {
+    color: $color_header;
+  }
+}

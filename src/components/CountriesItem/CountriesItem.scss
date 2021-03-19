@@ -1,0 +1,36 @@
+@import '../../styles/colors.scss';
+
+.countries_list {
+  &--item {
+    width: 200px;
+    height: 300px;
+    margin: 8px;
+    box-shadow: 0 0 10px -2px $color_country_shadow;
+    background-position: center;
+    background-size: cover;
+    transition: box-shadow 0.2s;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: 0 0 4px 4px $color_country_shadow;
+      cursor: pointer;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 8px $color_country_shadow;
+    }
+  }
+
+  &--blackout {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparentize($color_main_text, 0.6);
+    color: $color_bg;
+  }
+}
